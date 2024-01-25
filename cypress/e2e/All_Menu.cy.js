@@ -18,7 +18,8 @@ let LoginData;
             LoginData=data;
         })
         
-        cy.visit('https://www.saucedemo.com/')
+       // cy.visit('https://www.saucedemo.com/')
+        cy.visit('https://www.saucedemo.com/v1/index.html')
         login.Inputusername('standard_user')
         login.Inputpassword('secret_sauce')
         login.ClickButtonLogIn()

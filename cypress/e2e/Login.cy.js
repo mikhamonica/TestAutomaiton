@@ -16,7 +16,8 @@ let LoginData;
             LoginData=data;
         })
         
-        cy.visit('https://www.saucedemo.com/')
+        //cy.visit('https://www.saucedemo.com')
+        cy.visit('https://www.saucedemo.com/v1/index.html')
         cy.wait(6000)
     })
 

@@ -1,8 +1,8 @@
 class AllMenu{
     Element={
-        SortBy:() => cy.xpath('//select[@class="product_sort_container"]'),
+        SortBy:() => cy.xpath('//div[@id="inventory_filter_container"]/select'),
         SortByDesc :() => cy.xpath ('//option[@value="za"]'),
-        AddToCart:() => cy.xpath ('//button[@id="add-to-cart-test.allthethings()-t-shirt-(red)"]'),
+        AddToCart:() => cy.xpath ('(//button[@class="btn_primary btn_inventory"])[1]'),
         Cart :() => cy.xpath('//div[@id="shopping_cart_container"]'),
         ProductName :() => cy.xpath('//a[@id="item_4_title_link"]'),
         RemoveButton :() => cy.xpath('//button[@id="remove-sauce-labs-backpack"]'),
@@ -11,7 +11,7 @@ class AllMenu{
     }
 
     ClickSortBy(){
-        this.Element.SearchBar().click()
+        this.Element.SortBy().click()
     }
 
     ClickSortByDesc(){
